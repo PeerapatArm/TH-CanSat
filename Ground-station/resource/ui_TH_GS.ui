@@ -245,10 +245,30 @@ color: white</string>
       <string>0.00</string>
      </property>
     </widget>
-    <widget class="PlotWidget" name="Roc_Lat_graph" native="true">
+    <widget class="QLabel" name="T_ACCX">
      <property name="geometry">
       <rect>
-       <x>1020</x>
+       <x>360</x>
+       <y>20</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: white</string>
+     </property>
+     <property name="text">
+      <string>ACCX</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="PlotWidget" name="Can_ACCX_graph" native="true">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
        <y>50</y>
        <width>251</width>
        <height>121</height>
@@ -258,10 +278,10 @@ color: white</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="PlotWidget" name="Roc_Long_graph" native="true">
+    <widget class="PlotWidget" name="Can_ACCY_graph" native="true">
      <property name="geometry">
       <rect>
-       <x>1020</x>
+       <x>360</x>
        <y>220</y>
        <width>251</width>
        <height>121</height>
@@ -271,10 +291,10 @@ color: white</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="PlotWidget" name="Roc_Temp_graph" native="true">
+    <widget class="PlotWidget" name="Can_ACCZ_graph" native="true">
      <property name="geometry">
       <rect>
-       <x>1020</x>
+       <x>360</x>
        <y>390</y>
        <width>251</width>
        <height>121</height>
@@ -284,11 +304,111 @@ color: white</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="PlotWidget" name="Roc_Alt_graph" native="true">
+    <widget class="QLabel" name="ACCX">
      <property name="geometry">
       <rect>
-       <x>1020</x>
-       <y>570</y>
+       <x>550</x>
+       <y>20</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: white</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="T_ACCY">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>190</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: white</string>
+     </property>
+     <property name="text">
+      <string>ACCY</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ACCY">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>190</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: white</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="T_ACCZ">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>360</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: white</string>
+     </property>
+     <property name="text">
+      <string>ACCZ</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ACCZ">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>360</y>
+       <width>85</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: white</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="PlotWidget" name="Can_GYRX_graph" native="true">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>50</y>
        <width>251</width>
        <height>121</height>
       </rect>
@@ -297,78 +417,36 @@ color: white</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QLabel" name="T_Roc_Lat">
+    <widget class="PlotWidget" name="Can_GYRY_graph" native="true">
      <property name="geometry">
       <rect>
-       <x>1030</x>
-       <y>20</y>
-       <width>81</width>
-       <height>21</height>
+       <x>700</x>
+       <y>220</y>
+       <width>251</width>
+       <height>121</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
-color: white</string>
-     </property>
-     <property name="text">
-      <string>Latitude</string>
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QLabel" name="T_Roc_Long">
+    <widget class="PlotWidget" name="Can_GYRZ_graph" native="true">
      <property name="geometry">
       <rect>
-       <x>1030</x>
-       <y>190</y>
-       <width>81</width>
-       <height>21</height>
+       <x>700</x>
+       <y>390</y>
+       <width>251</width>
+       <height>121</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
-color: white</string>
-     </property>
-     <property name="text">
-      <string>Longtitude</string>
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QLabel" name="T_Roc_Temp">
+    <widget class="QLabel" name="T_GYRX">
      <property name="geometry">
       <rect>
-       <x>1030</x>
-       <y>360</y>
-       <width>91</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
-color: white</string>
-     </property>
-     <property name="text">
-      <string>Tempurature</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="T_Roc_Alt">
-     <property name="geometry">
-      <rect>
-       <x>1030</x>
-       <y>540</y>
-       <width>81</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
-color: white</string>
-     </property>
-     <property name="text">
-      <string>Altitude</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="Roc_Lat">
-     <property name="geometry">
-      <rect>
-       <x>1210</x>
+       <x>710</x>
        <y>20</y>
        <width>61</width>
        <height>21</height>
@@ -379,13 +457,16 @@ color: white</string>
 color: white</string>
      </property>
      <property name="text">
-      <string>0.00</string>
+      <string>GYRX</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="Roc_Long">
+    <widget class="QLabel" name="T_GYRY">
      <property name="geometry">
       <rect>
-       <x>1210</x>
+       <x>710</x>
        <y>190</y>
        <width>61</width>
        <height>21</height>
@@ -396,13 +477,16 @@ color: white</string>
 color: white</string>
      </property>
      <property name="text">
-      <string>0.00</string>
+      <string>GYRY</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="Roc_Temp">
+    <widget class="QLabel" name="T_GYRZ">
      <property name="geometry">
       <rect>
-       <x>1210</x>
+       <x>710</x>
        <y>360</y>
        <width>61</width>
        <height>21</height>
@@ -413,15 +497,18 @@ color: white</string>
 color: white</string>
      </property>
      <property name="text">
-      <string>0.00</string>
+      <string>GYRZ</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="Roc_Alt">
+    <widget class="QLabel" name="GYRX">
      <property name="geometry">
       <rect>
-       <x>1210</x>
-       <y>540</y>
-       <width>61</width>
+       <x>880</x>
+       <y>20</y>
+       <width>71</width>
        <height>21</height>
       </rect>
      </property>
@@ -431,6 +518,49 @@ color: white</string>
      </property>
      <property name="text">
       <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="GYRY">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>190</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: white</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="GYRZ">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>360</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: white</string>
+     </property>
+     <property name="text">
+      <string>0.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </widget>
@@ -571,16 +701,6 @@ color: white</string>
 border-radius: 10px;
 font: 25 8pt &quot;Bahnschrift Light SemiCondensed&quot;;</string>
     </property>
-    <item>
-     <property name="text">
-      <string>Power on</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Power off</string>
-     </property>
-    </item>
    </widget>
    <widget class="QComboBox" name="Port_box">
     <property name="geometry">
